@@ -6,11 +6,12 @@ module Pages
 
     def  username_txt
      # $browser.text_field(:name,'name')
-       @common_page.text_name('name')
+       @common_page.text('credentials.username')
+
     end
 
     def  password_txt
-      @common_page.text('password',"login_input")
+      @common_page.text("credentials.password")
     end
 
     def login_img

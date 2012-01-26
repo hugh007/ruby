@@ -2,7 +2,7 @@ module Pages
   class CommonPage
 
     def initialize
-      
+
     end
 
     def check_page(pagename)
@@ -27,11 +27,7 @@ module Pages
        $browser.link(:url,url)
     end
 
-    def text(name, classname)
-      $browser.text_field(:name => name,:class => classname)
-    end
-
-    def text_name(name)
+    def text(name)
       $browser.text_field(:name => name)
     end
 
